@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="./css/style-facilities.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".head3").click(function () {
+                $(".mobile").slideToggle();
+            });
+        });
+    </script>
+    
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .navi {
+            z-index: 1000;
+        }
+
+        .facimg1,
+        .facimg2,
+        .facimg3,
+        .facimg4 {
+            width: 550px;
+            height: 310px;
+            background-size: cover;
+        }
+
+        .caption {
+            color: black;
+        }
+
+        .caption:hover{
+            color: #7B975C;
+        }
+        .col-md-6 {
+            padding-bottom: 50px;
+        }
+
+        #capbox {
+            text-align: center;
+            margin: auto;
+            padding: 50px;
+        }
+
+        .facimg1:hover,
+        .facimg2:hover,
+        .facimg3:hover,
+        .facimg4:hover {
+            opacity: 0.7;
+        }
+
+        .factext {
+            display: flex;
+        }
+
+        .price {
+            margin: 100px 0 0 300px;
+            box-sizing: border-box;
+        }
+
+        .facbutton{
+            border: 3px solid #7B975C;
+            background-color: white;
+            border-radius: 7px;
+            color:#7B975C;
+            font-size: 15px;
+        }
+        .facbutton:hover{
+            background-color:#7B975C; 
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+ 
+<!-- 공통 nav 시작 -->
+<header>
+    <div class="container">
+        <div class="container-small">
+            <img src="./logo4.png" alt="logo">
+        <button type="button" class="head3">
+            <span class="fa fa-bars" title="MENU"></span>
+        </button>
+        </div>
+        <nav class="head2">
+            <ul class="head2_ul">
+                <li><a href="#">글로벌</a></li>
+                <li><a href="#">호텔찾기</a></li>
+                <li><a href="#">멤버십</a></li>
+                <li><a href="#">예약조회</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </nav>
+    </div> 
+</header>
+<nav class="navi">
+    <div class="container">
+        <ul class="navi_list">
+            <li><a href="#">객실예약</a></li>
+            <li><a href="#">GoinTel 소개</a></li>
+            <li><a href="#">객실</a></li>
+            <li><a href="#">스페셜 오퍼</a></li>
+            <li><a href="#">다이닝</a></li>
+            <li><a href="#">부대시설</a></li>
+            <li><a href="#">웨딩</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="zero" style="width: 100%; height:130px">
+
+</div>
+<!-- 공통 nav 끝-->
+
+    <!-- facilities contents -->
+    <section class="conA">
+        <div class="container" id="capbox">
+            <h1>부대시설</h1>
+            <p>고객의 라이프 스타일과 1:1 맟춤 카운셀링 결과를 토대로, 각 개인에 적합한 프로그램 및 트리트먼트를 제공합니다.</p>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <div class="row" style="margin-bottom: 100px;">
+            <div class="col-md-6">
+                <div class="gallery">
+                    <a href="#" target="_blank">
+                        <img src="https://media.istockphoto.com/photos/sauna-with-mountain-and-lake-view-picture-id1065865774?k=20&m=1065865774&s=612x612&w=0&h=5OwWoJa7ZMjYnH_ZCVXLONTfBqfd0YJ4MVt8ZxUbC4c="
+                            class="facimg1" alt="Lights" style="width:100%">
+
+                        <div class="factext">
+                            <div class="caption">
+                                <h4>스파 &amp; 피트니스</h4>
+                                <h2>호텔 사우나</h2>
+                                <p>타입 <span>사우나</span></p>
+                                <p>위치 <span>85F</span></p>
+                            </div>
+                            <div class="price">
+                                <button type="button" class="facbutton">요금 조회</button>
+                            </div>
+                        </div>
+                </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="gallery">
+                    <a href="#" target="_blank">
+                        <img src="https://grandecentrepointratchadamri.com/upload/fitness/1.jpg?v=11" class="facimg2"
+                            alt="Nature" style="width:100%">
+                        <div class="factext">
+                            <div class="caption">
+                                <h4>스파 &amp; 피트니스</h4>
+                                <h2>피트니스센터</h2>
+                                <p>타입 <span>피트니스</span></p>
+                                <p>위치 <span>85F</span></p>
+                            </div>
+                            <div class="price">
+                                <button type="button"class="facbutton">요금 조회</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="gallery">
+                    <a href="#" target="_blank">
+                        <img src="https://cdn.eyesmag.com/content/uploads/posts/2022/03/03/dog-playground-in-korea-01-eee78be9-7c00-4501-93a6-062aece3ff1c.jpg"
+                            class="facimg3" alt="Fjords" style="width:100%">
+
+                        <div class="factext">
+                            <div class="caption">
+                                <h4>서비스</h4>
+                                <h2>반려견 놀이터</h2>
+                                <p>타입 <span>서비스</span></p>
+                                <p>위치 <span>85F</span></p>
+                            </div>
+                            <div class="price">
+                                <button type="button"class="facbutton">요금 조회</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="gallery">
+                    <a href="#" target="_blank">
+                        <img src="https://media.timeout.com/images/103951024/750/422/image.jpg" class="facimg4"
+                            alt="Fjords" style="width:100%">
+
+                        <div class="factext">
+                            <div class="caption">
+                                <h4>서비스</h4>
+                                <h2>호텔 라운지바</h2>
+                                <p>타입 <span>서비스</span></p>
+                                <p>위치 <span>79F</span></p>
+                            </div>
+                            <div class="price">
+                                <button type="button"class="facbutton">요금 조회</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer_footer">
+        <div class="foot1">
+            <!-- 로고링크 -->
+            <div class="foot1-desktop">
+                <div class="foot1-brand-wrap">
+                    <ul class="foot1-brand">
+                        <li>
+                            <a href="#" target="_blank" class="foot1-desktop-logo">
+                                <div class="logo-crop"><img src="./images/logo/logo2-white.png"
+                                        style="width: 230px; height: 46px; object-fit: cover; margin-right: -20px;"
+                                        alt="고인텔 로고" class="logo-goin"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/footer/footer_logo_lottehotel.png" alt="롯데호텔 로고">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/footer/footer_logo_l7.png" alt="L7 ">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/footer/footer_logo_resort.png" alt="롯데리조트">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot1-group" style="height: 69px;">
+                    <div class="foot1-platform-wrap">
+                        <ul class="foot1-platform">
+                            <li>
+                                <a href="https://itunes.apple.com/kr" target="_blank">
+                                    <img src="./images/footer/footer_appstore.png" alt="앱스토어">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://play.google.com" target="_blank">
+                                    <img src="./images/footer/footer-googleplay.png" alt="구글플레이">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot1-sns-wrap">
+                        <ul class="foot1-sns">
+                            <li>
+                                <a href="http://www.lottehotelmagazine.com" target="_blank">
+                                    <img src="./images/footer/footer-lhm.png" alt="LHM">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.tripadvisor.co.kr/" target="_blank">
+                                    <img src="./images/footer/footer-sns-tripa.png" alt="트립어드바이저 로고">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="./images/footer/footer-sns-facebook.png" alt="페이스북 로고">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="./images/footer/footer-sns-instagram.png" alt="인스타그램 로고">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/user/LotteHotels" target="_blank">
+                                    <img src="./images/footer/footer-sns-youtube.png" alt="유튜브 로고">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://blog.naver.com/lotte_hotels" target="_blank">
+                                    <img src="./images/footer/footer-sns-blog.png" alt="블로그 로고">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot1-mobile">
+                <ul class="foot1-sns">
+                    <li>
+                        <a href="http://www.lottehotelmagazine.com" target="_blank">
+                            <img src="./images/footer/footer-lhm.png" alt="LHM">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tripadvisor.co.kr/" target="_blank">
+                            <img src="./images/footer/footer-sns-tripa.png" alt="트립어드바이저 로고">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./images/footer/footer-sns-facebook.png" alt="페이스북 로고">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./images/footer/footer-sns-instagram.png" alt="인스타그램 로고">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/user/LotteHotels" target="_blank">
+                            <img src="./images/footer/footer-sns-youtube.png" alt="유튜브 로고">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://blog.naver.com/lotte_hotels" target="_blank">
+                            <img src="./images/footer/footer-sns-blog.png" alt="블로그 로고">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="foot2">
+            <div class="foot2-desktop">
+                <div class="foot2-info">
+                    <a href="./index.html" target="_blank" class="foot2-desktop-logo">
+                        <img src="./images/logo/logo1-crop-white.png" style="width: 140px;" alt="고인텔 로고"
+                            class="foot2-logo">
+                    </a>
+
+                    <div class="foot2_address">
+                        <div class="foot2-address">
+                            <em> ㈜호텔고인</em>
+                            <address>경기도 XX시 XXX로 00 KR XXXXXX N층</address>
+                            <p>/ 000-000-0000</p>
+                        </div>
+                        <div class="foot2-company-info">
+                            <span>대표이사 진용 / </span>
+                            <span>사업자등록번호 000-00-00000 / </span><br>
+                            <span>통신판매신고번호 중구00000호</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="foot2-link">
+                    <div class="foot2-link-1">
+                        <div class="foot2-link-list foot2-link-list00">
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">호텔 찾기</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">롯데호텔 소개</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">브랜드 소개</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">수상</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">갤러리</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">ART COLLECTION</a>
+                        </div>
+                        <div class="foot2-link-list foot2-link-list01">
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">고객의 소리</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">지점별 연락처</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">준법 HOTLINE</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">컴플라이언스</a>
+
+                            <a href="#" target="_blank" title="새창" class="foot2-link-item">채용</a><br><br>
+                        </div>
+                    </div>
+                    <div class="foot2-link-2">
+                        <div class="foot2-link-list foot2-link-list02">
+
+                            <a href="/global/ko/about/service-academy.html" target="_blank" title="새창"
+                                class="foot2-link-item">서비스아카데미</a>
+
+                            <a href="/VL/ko.html" target="_blank" title="새창" class="foot2-link-item">시니어 레지던스 VL</a>
+
+                            <a href="/global/ko/support/business-inquiry.html" target="_blank" title="새창"
+                                class="foot2-link-item">신규 개발</a>
+
+                            <a href="/global/ko/member/membership/staff.html" target="_blank" title="새창"
+                                class="foot2-link-item">임직원</a>
+
+                            <a href="/seoul-signiel/ko/sitemap.html" target="_self" class="foot2-link-item">사이트맵</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="foot2-mobile">
+                <!-- <div class="foot2-mobile-wrap">
+                    <div class="foot2-mobile-login">
+                        <a href="#"><span class="b-font">로그인</span></a>
+                        <a href="#"><span class="b-font">회원가입</span></a>
+                    </div>
+                    <div class="foot2-mobile-store">
+                        <a href="https://itunes.apple.com/kr" target="_blank"><img src="./images/footer/footer_appstore.png" alt="앱스토어"></a>
+                        <a href="https://play.google.com" target="_blank"><img src="./images/footer/footer-googleplay.png" alt="구글플레이"></a>
+                    </div>
+                </div>
+                <div class="foot2-mobile-find">
+                    <a href="#" target="_blank"><span class="b-font"></span>호텔 찾기</span></a>
+                    <a href="#" target="_blank"><span class="b-font"></span>롯데호텔 소개</span></a>
+                </div> -->
+                <div class="foot2-mobile-info">
+                    <div class="foot2-address">
+                        <em> ㈜호텔고인</em>
+                        <address>경기도 XX시 XXX로 00 KR XXXXXX N층</address>
+                        <p>/ 000-000-0000</p>
+                    </div>
+                    <div class="foot2-company-info">
+                        <span>대표이사 진용 / </span>
+                        <span>사업자등록번호 000-00-00000 / </span><br>
+                        <span>통신판매신고번호 중구00000호</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="foot3">
+                <div class="foot3-pol">
+                    <div class="foot3-pol-1"><a href="#">개인정보처리방침</a></div>
+                    <div class="foot3-pol-2"><a href="#">사이트 이용약관</a></div>
+                    <div class="foot3-pol-3"><a href="#">약관 및 정책</a></div>
+                </div>
+                <div class="dropup">
+                    <button class="dropbtn btnwide">　 패밀리사이트 　</button>
+                    <div class="dropup-content">
+                        <a href="#">고인지주</a>
+                        <a href="#">고인건설</a>
+                        <a href="#">고인글로벌</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

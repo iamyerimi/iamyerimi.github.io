@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{font-family: 'Noto Sans KR', sans-serif;}
+
+
+
+  /* 작은 화면 전용 */
+
+@media (max-width: 767px){
+    .combobox a{display: none;}
+    .navbar{display: none;}
+    .header{}
+}
+
+
+
+/* 큰 화면 전용 */
+@media (min-width: 768px){
+    
+}
+
+.col-sm-2{text-align: center;
+            text-decoration: none;}
+
+.col-sm-2:hover{ color: red;}
+
+
+.header{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.combobox{
+    display: flex;
+    height: 45px; width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    z-index: -99;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;}
+
+#myNavbar .navbar-nav li{
+    display: inline-block;
+    width: 150px;
+    height: 84px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#myNavbar .navbar-nav li a{
+    padding:15px;
+    font-size: 18px;
+    display: block;
+    margin-top: 16px;
+}
+
+.nav_info{
+    width: 100%;
+    height: 350px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dedede;
+    background-color: rgba(255,255,255,0.93);
+    position: relative;
+    top: -20px;
+    z-index: 1;
+}
+
+.nav_info .con_title{
+    font-size: 35px;
+}
+
+.nav_info p{
+    font-size: 22px;
+    margin: 40px 0;
+}
+
+
+#aaa1{
+    display: none;
+}
+
+
+#b1:active ~ #aaa1{
+   display: block !important;
+}
+
+.location{
+    position: relative;
+    top: 1000px;
+}
+
+.benefits{
+    position: relative;
+    top: 1000px;
+}
+
+.benerow{
+    display: flex;
+    flex: 1 1 1;
+    min-width: 1200px;
+    justify-content: center;
+}
+
+.beneicon{
+    display: block;
+    text-align: center;
+    margin: 60px;
+}
+
+.benetext{
+    text-align: center;
+}
+

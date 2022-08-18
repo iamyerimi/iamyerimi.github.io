@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rooms</title>
+    <!-- 스와이퍼 css js -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    
+    <!-- 공통 -->
+    <link rel="stylesheet" href="./css/style-room.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".head3").click(function() {
+                $(".mobile").slideToggle();
+            });
+        });
+    </script>
+
+
+    <style>
+        /*스와이퍼 스타일*/
+        .swiper-container {
+    width: 550px;
+    height: 368px;
+    margin: 40px auto;
+}
+.swiper-button-prev, .swiper-button-next{color: rgba(255, 255, 255, 0.8);}
+.swiper-button-prev:hover, .swiper-button-next:hover{color:#79835d;}
+.swiper-pagination-bullet{background-color:  white;}
+
+
+            /*공통*/
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+            
+            /*객실 스타일*/
+            #rooms-wrap{width: 1200px; display: flex; justify-content: center; margin:0 auto; padding-bottom: 60px;}
+            .rooms-list-wrap{padding: 0;}
+
+            
+
+            .rooms-list {display: flex; justify-content: flex-start; 
+            flex-wrap: wrap;}
+            .rs-wrap{padding: 20px; flex-direction: column; margin: 0 auto; overflow: hidden;}
+            .swiper-slide img:hover{cursor: pointer;}
+
+
+            .room-con-txt{padding-bottom: 10px; border-bottom:1px solid gray;word-break:break-all; width: 550px; font-size: 14px;}
+            .room-con-txt h2{margin-top: 0;}
+            .room-con-txt h2:hover{cursor: pointer;}
+            .room-txt-s:not(:nth-child(2)):before {content: "| ";}
+
+            .room-reserv{float:right; margin-top: 5px;}
+            .rbutton {
+                background-color: #79835d;
+                border: none;
+                color: white;
+                padding: 11px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                font-weight: bold;
+                margin: 2px;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+
+            /*작은 화면*/
+            @media (max-width: 767px){
+                #rooms-wrap{width: 100%;}
+            }
+
+    </style>
+
+
+</head>
+
+
+
+<body style="margin: 0 auto;">
+   
+  
+
+
+<!-- 공통 nav 시작 -->
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <img src="./logo4.png" alt="logo">
+            <button type="button" class="head3">
+                <span class="fa fa-bars" title="MENU"></span>
+            </button>
+            </div>
+            <nav class="head2">
+                <ul class="head2_ul">
+                    <li><a href="#">글로벌</a></li>
+                    <li><a href="#">호텔찾기</a></li>
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">예약조회</a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    <nav class="navi">
+        <div class="container">
+            <ul class="navi_list">
+                <li><a href="#">객실예약</a></li>
+                <li><a href="#">GoinTel 소개</a></li>
+                <li><a href="#">객실</a></li>
+                <li><a href="#">스페셜 오퍼</a></li>
+                <li><a href="#">다이닝</a></li>
+                <li><a href="#">부대시설</a></li>
+                <li><a href="#">웨딩</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="zero" style="width: 100%; height:130px">
+
+    </div>
+<!-- 공통 nav 끝-->
+
+<section class="con1">
+    <div class="container">
+        <h4 style="margin-bottom:0;">객실</h4>
+        <span class="con1_text">
+            서울 시내의 환상적인 전망이 어우러진 고인텔 서울의 최고급 호텔 사우나, 헬스장, 실내 수영장은 새로운 힐링과 활력의 시간을 제안합니다. 또한 한국 최초의 에비앙 스파는 프리미엄 수분공급을 통해 심신을 치유하는 에비앙 스파만의 특별한 트리트먼트를 제공합니다. 투숙객 전용 라운지에서는 한강 전망을 바라보며 티 타임을 즐기실 수 있습니다.
+        </span>
+    </div>
+</section>
+<hr style="margin-top:20px;">
+
+<div id="rooms-wrap">
+
+    <div class="rooms-list-wrap">
+        
+        <div class="rooms-list"> <!-- 스와이퍼 -->
+            <div class="rs-wrap">
+                <div class="swiper-container slider1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-delux-sweet-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-delux-sweet-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-delux-sweet-3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                
+                <div class="room-con-txt">
+                    <h2>디럭스 스위트 룸</h2>
+                    <span class="room-txt-s">침대타입</span> <strong class="room-txt-b">더블 / 트윈</strong>
+                    <span class="room-txt-s">전망</span> <strong class="room-txt-b">시티뷰 / 리버뷰 / 전망욕실</strong><br>
+                    <span class="room-txt-s">투숙인원</span> <strong class="room-txt-b">4명</strong>
+                    <span class="room-txt-s">객실면적</span> <strong class="room-txt-b">59~79m<sup>2</sup></strong>
+                </div>
+                <div class="room-reserv"><button class="rbutton">요금조회</button></div>
+            </div>
+
+            <div class="rs-wrap">
+                <div class="swiper-container slider2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-korPremire-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-korPremire-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-korPremire-3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                    
+                <div class="room-con-txt">
+                    <h2>코리안 프리미어 룸</h2>
+                    <span class="room-txt-s">침대타입</span> <strong class="room-txt-b">더블</strong>
+                    <span class="room-txt-s">전망</span> <strong class="room-txt-b">리버뷰 / 전망욕실</strong><br>
+                    <span class="room-txt-s">투숙인원</span> <strong class="room-txt-b">2명</strong>
+                    <span class="room-txt-s">객실면적</span> <strong class="room-txt-b">43m<sup>2</sup></strong>
+                </div>
+                <div class="room-reserv"><button class="rbutton">요금조회</button></div>
+                
+            </div>
+
+            <div class="rs-wrap">
+                
+                <div class="swiper-container slider3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-pet-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-pet-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-pet-3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                    
+                <div class="room-con-txt">
+                    <h2>펫 프리미어 룸</h2>
+                    <span class="room-txt-s">침대타입</span> <strong class="room-txt-b">더블 / 트윈</strong>
+                    <span class="room-txt-s">전망</span> <strong class="room-txt-b">시티뷰</strong><br>
+                    <span class="room-txt-s">투숙인원</span> <strong class="room-txt-b">2명 / 반려동물 동반 가능</strong>
+                    <span class="room-txt-s">객실면적</span> <strong class="room-txt-b">56~65m<sup>2</sup></strong>
+                </div>
+                <div class="room-reserv"><button class="rbutton">요금조회</button></div>
+            
+            </div>
+
+            <div class="rs-wrap">
+                
+                <div class="swiper-container slider4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-royalSweet-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-royalSweet-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/rooms/slide/room-royalSweet-3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                    
+                <div class="room-con-txt">
+                    <h2>로얄 스위트 룸</h2>
+                    <span class="room-txt-s">침대타입</span> <strong class="room-txt-b">더블</strong>
+                    <span class="room-txt-s">전망</span> <strong class="room-txt-b">시티뷰 / 전망욕실</strong><br>
+                    <span class="room-txt-s">투숙인원</span> <strong class="room-txt-b">2명</strong>
+                    <span class="room-txt-s">객실면적</span> <strong class="room-txt-b">358m<sup>2</sup></strong>
+                </div>
+                <div class="room-reserv"><button class="rbutton">요금조회</button></div>
+            </div>
+
+            
+        </div>
+                
+                
+
+            
+
+    </div>
+
+    
+    
+</div>
+
+
+<!-- 스와이퍼 스크립트 -->
+
+<script>
+        var slider1 = new Swiper ('.slider1', {
+    effect: 'slide',
+
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+    });
+
+
+    var slider2 = new Swiper ('.slider2', {
+    effect: 'slide',
+
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+    });
+
+
+    var slider3 = new Swiper ('.slider3', {
+    effect: 'slide',
+
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+    });
+
+    var slider4 = new Swiper ('.slider4', {
+    effect: 'slide',
+
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+    });
+</script>
+
+
+
+
+<!-- footer -->
+
+
+<div class="footer_footer">
+    <div class="foot1"> <!-- 로고링크 -->
+        <div class="foot1-desktop">
+            <div class="foot1-brand-wrap">
+                <ul class="foot1-brand">
+                    <li>
+                        <a href="#" target="_blank" class="foot1-desktop-logo">
+                            <div class="logo-crop"><img src="./images/logo/logo2-white.png" style="width: 230px; height: 46px; object-fit: cover; margin-right: -20px;" alt="고인텔 로고" class="logo-goin"></div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/footer/footer_logo_lottehotel.png" alt="롯데호텔 로고">
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/footer/footer_logo_l7.png" alt="L7 ">
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/footer/footer_logo_resort.png" alt="롯데리조트">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot1-group">
+                <div class="foot1-platform-wrap">
+                    <ul class="foot1-platform">
+                        <li>
+                            <a href="https://itunes.apple.com/kr" target="_blank">
+                                <img src="./images/footer/footer_appstore.png" alt="앱스토어">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://play.google.com" target="_blank">
+                                <img src="./images/footer/footer-googleplay.png" alt="구글플레이">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot1-sns-wrap">
+                    <ul class="foot1-sns">
+                        <li>
+                            <a href="http://www.lottehotelmagazine.com" target="_blank">
+                                <img src="./images/footer/footer-lhm.png" alt="LHM">
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://www.tripadvisor.co.kr/" target="_blank">
+                                <img src="./images/footer/footer-sns-tripa.png" alt="트립어드바이저 로고">
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="./images/footer/footer-sns-facebook.png" alt="페이스북 로고">
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="./images/footer/footer-sns-instagram.png" alt="인스타그램 로고">
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://www.youtube.com/user/LotteHotels" target="_blank">
+                                <img src="./images/footer/footer-sns-youtube.png" alt="유튜브 로고">
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://blog.naver.com/lotte_hotels" target="_blank">
+                                <img src="./images/footer/footer-sns-blog.png" alt="블로그 로고">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot1-mobile">
+            <ul class="foot1-sns">
+                <li>
+                    <a href="http://www.lottehotelmagazine.com" target="_blank">
+                        <img src="./images/footer/footer-lhm.png" alt="LHM">
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.tripadvisor.co.kr/" target="_blank">
+                        <img src="./images/footer/footer-sns-tripa.png" alt="트립어드바이저 로고">
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./images/footer/footer-sns-facebook.png" alt="페이스북 로고">
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./images/footer/footer-sns-instagram.png" alt="인스타그램 로고">
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.youtube.com/user/LotteHotels" target="_blank">
+                        <img src="./images/footer/footer-sns-youtube.png" alt="유튜브 로고">
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://blog.naver.com/lotte_hotels" target="_blank">
+                        <img src="./images/footer/footer-sns-blog.png" alt="블로그 로고">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="foot2">        
+        <div class="foot2-desktop">
+            <div class="foot2-info">
+                <a href="./index.html" target="_blank" class="foot2-desktop-logo">
+                    <img src="./images/logo/logo1-crop-white.png" style="width: 140px;" alt="고인텔 로고" class="foot2-logo">
+                </a>
+
+        <div class="foot2_address">
+                <div class="foot2-address">
+                    <em> ㈜호텔고인</em>
+                    <address>경기도 XX시 XXX로 00 KR XXXXXX N층</address>
+                    <p>/ 000-000-0000</p>
+                </div>
+                <div class="foot2-company-info">
+                    <span>대표이사 진용 / </span>
+                    <span>사업자등록번호 000-00-00000 / </span><br>
+                    <span>통신판매신고번호 중구00000호</span>
+                </div>
+            </div>
+        </div>   
+
+            <div class="foot2-link">
+                <div class="foot2-link-1">
+                    <div class="foot2-link-list foot2-link-list00">
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">호텔 찾기</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">롯데호텔 소개</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">브랜드 소개</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">수상</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">갤러리</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">ART COLLECTION</a>
+                    </div>
+                    <div class="foot2-link-list foot2-link-list01">
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">고객의 소리</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">지점별 연락처</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">준법 HOTLINE</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">컴플라이언스</a>
+                    
+                        <a href="#" target="_blank" title="새창" class="foot2-link-item">채용</a><br><br>
+                    </div>
+                </div>
+                <div class="foot2-link-2">
+                    <div class="foot2-link-list foot2-link-list02">
+                        
+                        <a href="/global/ko/about/service-academy.html" target="_blank" title="새창" class="foot2-link-item">서비스아카데미</a>
+                    
+                        <a href="/VL/ko.html" target="_blank" title="새창" class="foot2-link-item">시니어 레지던스 VL</a>
+                    
+                        <a href="/global/ko/support/business-inquiry.html" target="_blank" title="새창" class="foot2-link-item">신규 개발</a>
+                    
+                        <a href="/global/ko/member/membership/staff.html" target="_blank" title="새창" class="foot2-link-item">임직원</a>
+                    
+                        <a href="/seoul-signiel/ko/sitemap.html" target="_self" class="foot2-link-item">사이트맵</a>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="foot2-mobile">
+            <!-- <div class="foot2-mobile-wrap">
+                <div class="foot2-mobile-login">
+                    <a href="#"><span class="b-font">로그인</span></a>
+                    <a href="#"><span class="b-font">회원가입</span></a>
+                </div>
+                <div class="foot2-mobile-store">
+                    <a href="https://itunes.apple.com/kr" target="_blank"><img src="./images/footer/footer_appstore.png" alt="앱스토어"></a>
+                    <a href="https://play.google.com" target="_blank"><img src="./images/footer/footer-googleplay.png" alt="구글플레이"></a>
+                </div>
+            </div>
+            <div class="foot2-mobile-find">
+                <a href="#" target="_blank"><span class="b-font"></span>호텔 찾기</span></a>
+                <a href="#" target="_blank"><span class="b-font"></span>롯데호텔 소개</span></a>
+            </div> -->
+            <div class="foot2-mobile-info">
+                <div class="foot2-address">
+                    <em> ㈜호텔고인</em>
+                    <address>경기도 XX시 XXX로 00 KR XXXXXX N층</address>
+                    <p>/ 000-000-0000</p>
+                </div>
+                <div class="foot2-company-info">
+                    <span>대표이사 진용 / </span>
+                    <span>사업자등록번호 000-00-00000 / </span><br>
+                    <span>통신판매신고번호 중구00000호</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="foot3">
+            <div class="foot3-pol">
+                <div class="foot3-pol-1"><a href="#">개인정보처리방침</a></div>
+                <div class="foot3-pol-2"><a href="#">사이트 이용약관</a></div>
+                <div class="foot3-pol-3"><a href="#">약관 및 정책</a></div>
+            </div>
+            <div class="dropup">
+                <button class="dropbtn btnwide">　 패밀리사이트 　</button>
+                <div class="dropup-content">
+                  <a href="#">고인지주</a>
+                  <a href="#">고인건설</a>
+                  <a href="#">고인글로벌</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+</body>
+</html>

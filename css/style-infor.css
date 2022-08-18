@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/*기본색상*/
+
+:root {
+  --main-color: #5d9ab2;
+  --head-color: rgba(255,255,255,.93);
+  --dark-main-color: #dcdcdc;
+  --text-bright-color: #fff;
+  --text-dark-color: #666;
+  --icon-color: #fff;
+  --line-color: #dcdcdc;
+  --gray-color: #ddd;
+  --large-width: 1000px;
+  --middle-width: 768px;
+}
+
+/*기본 폰트 크기 설정*/
+
+@media (max-width: 599px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+/*기본 설정: 페이지 전체*/
+
+body {
+  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--text-dark-color);
+}
+
+/* header */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--head-color);
+  z-index: 1000;
+  border-bottom: 1px solid var(--line-color);
+}
+
+header .container{
+    height: 45px;
+}
+
+header img{
+    width: 140px; height: 45px;
+}
+
+.head2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.head2 a {
+  display: block;
+  padding: 0 15px;
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.head2_ul:not(:last-child){
+    border: 1px solid black;
+}
+
+.head2 a:hover {
+  text-decoration: underline 2px solid var(--text-dark-color);
+}
+
+/*navi*/
+nav.navi{
+    position: sticky;
+    top: -45px;
+}
+
+.navi .container{
+    background-color: var(--head-color);
+    height: 85px;
+    width: 100%;
+    position: absolute;
+    top: 45px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.navi a{
+    padding: 0 20px;
+    color: inherit;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+.navi .navi_list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 29.5px;
+}
+
+.navi a:hover{
+  text-decoration: underline 2px;
+  opacity: 0.3;
+}
+
+/* mobile */
+.mobile .container{
+  box-sizing: border-box;
+  width: 100%; height: 100%;
+  background-color: var(--head-color);
+  color: var(--text-dark-color);
+  position: relative;
+  top: -775px;
+  padding: 20px 10px;
+}
+
+.mobile .container ul li{
+  list-style: none;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.mobile a{
+  text-decoration: none;
+  color: var(--text-dark-color);
+}
+
+
+
+.mobile .login{
+  font-size: 30px
+}
+
+/*infor - section1 (con1)*/
+.con1 .container{
+  text-align: center;
+  width: var(--large-width);
+  margin: 0 auto;
+}
+
+.con1 .container h4{
+  font-size: 34px;
+  padding: 40px 0;
+}
+
+.con1 .container .con1_text{
+  font-size: 17px;
+}
+
+/*infor - section2 (con2)*/
+.con2{margin-bottom: 20px;}
+
+.con2 .container{
+  padding: 15pxpx;
+  width: var(--large-width);
+  margin: auto;
+}
+
+.con2 img{
+  width: 550px; height: 250px;
+}
+
+.con2 .con2_sec{
+  margin: auto;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.con2 .con_title{
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 5px 15px 15px 15px;
+}
+
+.con2 .con_infor{
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+.con2 p{
+  margin: 0;
+}
+
+/* 큰 화면 전용 */
+@media (min-width: 768px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .head2 ul {
+    display: flex;
+  }
+  .head2 a {
+    font-size: 14px;
+  }
+
+  .head3 {
+    display: none;
+  }
+
+  .head2{
+    display: block !important;
+  }
+
+  .mobile{display:  none;}
+}
+
+/* 작은 화면 전용 */
+
+@media (max-width: 767px){
+    header .container-small{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .head2 {
+        display: none;
+    }
+
+    .head3{
+        outline: none; border: none;
+        background: none; padding: 0;
+        margin-right: 10px; font-size: 28px;
+        cursor: pointer; opacity: 0.5;
+    }
+    .head3:hover{opacity: 0.3;}
+
+    .navi{display: none;}
+
+    .zero{display: none;}
+    .con1 h4{margin-top: 40px;}
+
+    .con1 .container{
+      width: 100%;
+    }
+
+    .con1 .container .con1_text{
+      font-size: 8px;
+    }
+
+    .con2 .container{
+      width: 100%;
+    }
+
+    .con2 .con_title{
+      width: 100%;
+    }
+
+    .con2 .con2_sec{
+      margin: auto;
+    }
+}
+
+.footer_footer{
+outline: 0;
+margin: 0;
+padding: 0;
+}
+
+
+div .foot1-desktop{
+  display: inline-block; text-align: center; 
+  width: 100%; height: 100%; background-color: #9b896e;}
+/*ul .foot1-brand{width: 100%; height: 80px; background-color: black;} */
+div .foot1-group{display: inline-block;
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; height: 46px; margin: 0 auto; padding: 23px 0 0px; background-color: #9b896e;}
+.foot1-brand, .foot1-platform, .foot1-sns {background-color: #9b896e;}
+
+
+
+ul{display: inline-block; text-align: center;}
+ul li{height: 46px; display: inline-block;}
+.foot1-sns{margin-left: 35px;}
+
+.foot1-platform li, .foot1-sns li{padding: 0 15px;}
+
+/* 푸터 로고 호버 색변화 */
+.foot1-brand li a img:hover{opacity: .5; transition: .5s ease-out;}
+.foot1-platform li a img, .foot1-sns li a img{
+opacity: .5; width: auto; height: 22px; vertical-align:middle;}
+.foot1-platform li a img:hover, .foot1-sns li a img:hover{opacity: 1; transition: .5s ease-out;}        
+.foot2-link-item:hover{color: white; transition: .5s ease-out;}
+
+
+.foot2{width: 100%; background-color: #24281f; color: gray; padding: 54px 0 0 0; }
+.foot2-desktop{height: 250px; display: flex; font-size: 12px;}
+.foot2-info{display: block; float: left; width: 534px; height: 220px; margin-left:20px; font-size:15px; }
+.foot2-address{padding: 30px 0 0; font-size: 12px;}
+.foot2-company-info{font-size: 12px;}
+.foot2-link{display: flex; float: right; max-width: 510px; height: 178px; line-height: 17px; font-size:14px; margin-right: 80px;}
+.foot2-link-list{display: block; padding: 0 5px 0 20px; width: 170px; }
+.foot2-link-list a{display: block; text-decoration-line: none; color: gray; margin: 14px 0 0; }
+.foot2-link-1{display: flex;}
+
+.foot2-mobile-info, .b-font, .foot2-mobile-pol{font-weight: 900;}
+
+
+/*패밀리사이트 드롭업으로 처리*/
+  .dropbtn{margin: 0; cursor: pointer;}
+  .dropbtn{
+  background-color: black; color: white;
+  padding: 8px; font-size: 16px; border: 1px solid white; border-radius: 3px;
+  }
+  .dropup {
+  position: relative;
+  display: inline-block;
+  }
+  .dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 153px;
+  bottom: 39px;
+  z-index: 1;
+  border-radius: 3px;
+  }
+  .dropup-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  }
+  .dropup-content a:hover {background-color: #ccc}    
+  .dropup:hover .dropup-content {display: block;}
+  .dropup:hover .dropbtn {opacity: 0.7;}
+  .dropbtn:hover{background-color: darkgray;}   
+
+/*모바일페이지 전용*/
+@media (max-width: 748px){
+  .foot1, .foot2 {min-width:440px}
+  .foot1-brand-wrap{display: none;}
+  .foot1-platform-wrap{display: none;}
+  .foot1-desktop{display: none; height: 50px;}
+  .foot1-sns{padding-left: 0;}
+  /* .foot2-desktop{display: none;} */
+  .foot2{height: 100%; padding: 0;}
+  .foot2-info{margin: 0; flex: 1; height: 100%;}
+  .foot2-desktop{height: 100%; padding-bottom: 20px;}
+  .foot2-link{display: none;}
+  .foot2-desktop-logo{display: none;}
+  .foot2-address{padding: 20px 0 0 0;}
+  .foot2-address, .foot2-company-info{font-size: 12px; font-weight: 900; text-align: center;}
+  .foot2-mobile{width: 100%; background-color: black; color: gray;}
+
+  .dropup{display: none;}
+  .foot3-pol{display:none;}
+  .foot3-pol a{display: none;}
+  .foot3-pol-1, .foot3-pol-2, .foot3-pol-3{display: none;}
+
+  .foot2_address p{margin: 0;}
+  div.foot3{display: none;}
+}
+
+  
+
+/*웹페이지 전용*/
+@media (min-height: 748px){
+  /* .foot1-desktop{min-width: 1000px;}
+  .foot2{min-width: 1000px;} */
+  .foot1-mobile{display: none;}
+  .foot2-mobile{display: none;} /* 아직 밑에 코드 없음 */
+
+  .foot3{margin: 0; padding: 20px; display: flex; justify-content: space-between;}
+  .foot3-pol{display: flex; justify-content: center; align-items: center;}
+  .foot3-pol a{display: block; text-decoration-line: none; color: gray; padding: 0 10px 0;}
+  /*구분선*/
+  .foot1-brand-wrap{border-bottom:1px solid #333; padding: 10px 0}
+  /* .foot1-group{border-top: 1px solid #333;} */
+  .foot2-link-list00{border-right: 1px solid gray;}
+  .foot2-link-list01{border-right: 1px solid gray;}
+  .foot3{border-top: 1px solid gray;}
+
+}

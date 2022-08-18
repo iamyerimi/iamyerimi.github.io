@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoinTel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/69f5245cad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <!--헤더 시작-->
+    <div class="container-fluid header" style="background-color: rgba(255, 255, 255, 0.93); color: #666; height: 45px">
+        <img src="./logo4.png" alt="logo" width="130vmax" height="100%">
+          <div class="row combobox">
+            <div class="col-sm-2"><a href="">글로벌</a></div>
+            <div class="col-sm-2"><a href="">호텔찾기</a></div>
+            <div class="col-sm-2"><a href="">멤버십</a></div>
+            <div class="col-sm-2"><a href="">예약조회</a></div>
+            <div class="col-sm-2"><a href="">로그인</a></div>
+            <div class="col-sm-2"><a href="">언어선택(버튼자리)</a></div>
+          </div>      
+         </div>
+        <!--헤더 끝-->
+
+        <!--네비게이션 시작-->
+      <nav class="navbar navbar-inverse" bg-light text-dark data-spy="affix" data-offset-top="100"
+      style="background-color: rgba(255,255,255,0.93); color: #666; border-color: #dedede; height: 85px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar" style="width: 100%; height: 85px;">
+                  <ul class="nav navbar-nav" style="height: 85px; padding-left: 30px;  overflow: hidden;">
+                        <li><a href="#">객실예약</a></li>
+                        <li><a href="#" id="b1">GoinTel 소개<span class="caret"></span></a></li>
+                        <li><a href="#" id="b2">객실<span class="caret"></span></a></li>
+                        <li><a href="#" id="b3">스페셜 오퍼<span class="caret"></span></a></li>
+                        <li><a href="#" id="b4">다이닝<span class="caret"></span></a></li>
+                        <li><a href="#" id="b5">부대시설<span class="caret"></span></a></li>
+                        <li><a href="#" id="b6">웨딩 &amp; 컨벤션<span class="caret"></span></a></li>
+                        </li>
+                        <a href="#" class="btn btn-info" role="button" 
+                            style="margin: 25px 0 50px 100px;">뭐라뭐라궁시렁하는 버튼</a>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+      <!--네비게이션 끝-->
+
+          <!-- nav_info 시작 -->
+          <div class="container-fluid" style="padding: 0;" id="aaa1">
+            <div class="nav_info">
+                <div class="con_title">
+                  GoinTel <br> 소개<span class="glyphicon glyphicon-chevron-right"></span>
+                </div>
+                <div class="con1">
+                  <p>GoinTel 소개</p>
+                  <p>공지사항</p>
+                  <p>수상</p>
+                </div>
+                <div class="con2">
+                  <p>GoinTel 위치</p>
+                  <p>갤러리</p>
+                </div>
+                <div class="con3">
+                  <p>주요 명소</p>
+                  <p>ALT COLLECTION</p>
+                </div>
+            </div>
+          </div>
+          <!-- nav_info 끝 -->
+
+      
+      
+
+    <div class="container-fluit background"> <!--백그라운드 슬라이드 시작-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="./slide_img/slideimg01.jpg" alt="Los Angeles" style="width:100%; height: 820px;">
+              <div class="carousel-caption">
+            </div>
+            </div>
+      
+            <div class="item">
+              <img src="./slide_img/slideimg02.jpg" alt="Chicago" style="width:100%; height: 820px;">
+              <div class="carousel-caption">
+            </div>
+            </div>
+          
+            <div class="item">
+              <img src="./slide_img/slideimg03.jpg" alt="New york" style="width:100%; height: 820px;">
+               <div class="carousel-caption">
+            </div>
+            </div>
+
+            <div class="item">
+                <img src="./slide_img/slideimg04.jpg" alt="Chicago" style="width:100%; height: 820px;">
+                <div class="carousel-caption">
+              </div>
+              </div>
+          </div>
+          <!--버튼 없애기
+          Left and right controls
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+        </div>
+      </div> <!--백그라운드 슬라이드 끝--> 
+
+
+
+
+
+
+
+
+
+      <script>
+        $(function(){
+            $('body').scrollspy({target:".navbar", offset:50});
+            $('#myNavbar a').on('click', function(event){
+               if(this.hash !==""){
+                   event.preventDefault();
+                   var hash = this.hash;
+                   $('html, body').animate({scrollTop:$(hash).offset().top}, 400, function(){
+                       window.location.hash = hash;
+                   });
+               } 
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 지도 시작 -->
+<div class="location" style="margin: 0 10% 10% 10%;">
+  <h2 style="text-align: center; margin-bottom: 45px;">LOCATION</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.154269518642!2d126.98603255101398!3d37.551173632666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca257a88e6aa9%3A0x5cf8577c2e7982a5!2zTuyEnOyauO2DgOybjA!5e1!3m2!1sko!2skr!4v1529305268860" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+ <!-- 지도 끝 -->
+
+
+
+
+
+  <!-- benefits 시작-->
+  <div class="benefits" style="margin-bottom: 30px;">
+    <h2 style="text-align:center;">고인텔 리워즈 혜택</h2>
+    <hr>
+    <div class="benerow">
+        <div class="bene1" style="width: 30%; border-right: 1px solid black">
+            <div class="beneicon">
+                <i class="fa-solid fa-gift" style="font-size: 45px;"></i>
+            </div>
+            <p class="benetext">회원 전용 이벤트를 누려보세요.</p>
+        </div>
+
+        <div class="bene2" style="width: 30%; border-right: 1px solid black;">
+            <div class="beneicon">
+                <i class="fa-solid fa-calculator" style="font-size: 45px;"></i>
+            </div>
+            <p class="benetext">멤버십 회원만을 위해 할인된 가격을 제공합니다.</p>
+        </div>
+
+        <div class="bene3" style="width: 30%;">
+            <div class="beneicon">
+                <i class="fa-solid fa-coins" style="font-size: 45px;"></i>
+            </div>
+            <p class="benetext">포인트를 적립하고, 현금처럼 실용적으로 사용하세요.</p>
+        </div>
+    </div>
+    <hr>
+</div>
+<!-- benefits 끝 -->
+
+</body>
+</html>
